@@ -1,16 +1,35 @@
-
 client/node_modules
 server/node_modules
 
 client/npm-debug.log*
+server/npm-debug.log*
 
 client/build
 
+# Ignore environment files but keep examples
 **/.env*
 !**/.env*.example
 
-# ignore mongo data
+# Ignore MongoDB data but keep .gitkeep
 !server/docker/mongo-data
 server/docker/mongo-data/*
 !server/docker/mongo-data/.gitkeep
 
+# OS generated files
+**/.DS_Store
+**/Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Coverage reports
+coverage/
+
+# PM2 logs
+pids
+*.pid
+*.seed
+
+# Docker override
+docker-compose.override.yml
