@@ -245,3 +245,15 @@ export const GOOGLE_AUTH_LINK = "https://my-own-app.herokuapp.com/auth/google";
 ## Licence
 
 ### MIT
+
+
+## Git & GitHub Notes (by Tayyiba-Kiran)
+
+- Git is a version control system that tracks code changes.
+- `git clone` copies the repo to your local system.
+- `git checkout -b branch-name` creates a new branch.
+- `git add .` stages the changes.
+- `git commit -m "message"` commits the changes.
+- `git push origin branch-name` pushes the branch to GitHub.
+- `.gitignore` contains files/folders to ignore in repo.
+- README describes the project, setup steps, and usage.
