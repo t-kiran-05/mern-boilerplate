@@ -13,7 +13,8 @@
     "docker:prod:arm:client:build": "COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 DOCKER_DEFAULT_PLATFORM=linux/arm64 docker compose build mdp-client",
     "docker:prod:arm:server:build": "COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 DOCKER_DEFAULT_PLATFORM=linux/arm64 docker compose build mdp-server",
     "docker:prod:client:push": "docker push nemanjamitic/mern-boilerplate-client:latest",
-    "docker:prod:server:push": "docker push nemanjamitic/mern-boilerplate-server:latest"
+    "docker:prod:server:push": "docker push nemanjamitic/mern-boilerplate-server:latest",
+    "docker:build:arm": "docker buildx build --platform linux/arm64 -t your-image-name:arm ."
   },
   "author": "Nemanja Mitic (https://github.com/nemanjam)",
   "license": "MIT",
