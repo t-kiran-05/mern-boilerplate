@@ -1,10 +1,68 @@
 # MERN Boilerplate
 
-This is full stack boilerplate with React, Redux, Express, Mongoose and Passport. Skip the tedious part and get straight to developing your app.
+A full-stack MERN boilerplate built with React, Redux, Express, MongoDB, Passport, and Docker. Skip setup hassle and start building your app.
 
-## Demo
+## 🚀 Live Demo
 
-- Live demo is available here: **[https://mern-boilerplate.arm1.nemanjamitic.com](https://mern-boilerplate.arm1.nemanjamitic.com)**
+👉 [View Live](https://mern-boilerplate.arm1.nemanjamitic.com)
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend**: React, Redux, Thunk, Formik, Yup  
+- **Backend**: Node.js, Express, MongoDB, Mongoose  
+- **Auth**: Passport (Local, Google, Facebook), JWT  
+- **Deployment**: Docker, Heroku  
+- **Other**: Babel, Joi Validation, Multer (Image Upload), PM2
+
+---
+
+## ⚙️ Features
+
+### Server
+
+- User & Message Models with 1:N relation
+- Full REST API with CRUD operations
+- Role-based Auth [User, Admin]
+- Local & OAuth [Google, Facebook] Authentication
+- JWT Protected Routes
+- Image Uploads with Multer
+- Server-side validation with Joi
+- Seed DB with sample data
+- `.env` file for config
+
+### Client
+
+- React Functional Components with Hooks
+- Redux for state management with Thunk
+- Auth-protected routes with different views
+- Admin dashboard with control access
+- Form Validation using Formik & Yup
+- Reusable layout & loader components
+- Modular structure
+
+---
+
+## 📦 Folder Structure
+
+```bash
+mern-boilerplate/
+│
+├── client/               # React frontend
+│   └── ...
+│
+├── server/               # Node.js backend
+│   └── src/
+│       ├── models/
+│       ├── routes/
+│       ├── controllers/
+│       └── ...
+│
+├── screenshots/          # UI previews
+├── .env.example          # Sample config
+└── docker-compose.yml
+
 
 ## Deployment with Docker (2023. update)
 
@@ -14,34 +72,6 @@ Since Heroku is no longer free I made Docker production deployment that you can 
 - Traefik part of the deployment [traefik-proxy](https://github.com/nemanjam/traefik-proxy) and [traefik-proxy/apps/mern-boilerplate](https://github.com/nemanjam/traefik-proxy/tree/main/apps/mern-boilerplate)
 
 
-## Features
-
-- Server
-
-  - User and Message models with `1:N` relation
-  - Full CRUD REST API operations for both Message and User models
-  - Passport authentication with local `email/password`, Facebook and Google OAuth strategies and JWT protected APIs
-  - `User` and `Admin` roles
-  - NodeJS server with Babel for new JS syntax unified with React client
-  - `async/await` syntax across whole app
-  - Joi server side validation of user's input
-  - Single `.env` file configuration
-  - Image upload with Multer
-  - Database seed
-
-- Client
-
-  - React client with functional components and Hooks
-  - Redux state management with Thunk for async actions
-  - CSS agnostic, so you don't waste your time replacing my CSS framework with yours
-  - Home, Users, Profile, Admin, Notfound, Login and Register pages
-  - Protected routes with Higher order components
-  - Different views for unauthenticated, authenticated and admin user
-  - Edit/Delete forms for Message and User with Formik and Yup validation
-  - Admin has privileges to edit and delete other users and their messages
-  - Layout component, so you can have pages without Navbar
-  - Loading states with Loader component
-  - Single config file within `/constants` folder
 
 ## Installation
 
