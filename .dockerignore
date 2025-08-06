@@ -13,3 +13,7 @@ LICENCE
 
 screenshots/
 server/public/images/*
+
+# Existing entries...
+traefik/
+docker in progress/

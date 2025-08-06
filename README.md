@@ -150,6 +150,12 @@ $ cd client
 $ npm install
 $ npm start
 ```
+## 🔧 Docker Build (ARM-compatible)
+
+### Client (React App)
+```bash
+docker build -t your-client-name -f ./client/Dockerfile .
+
 
 That's it as far for development setup. For production check the `Deployment on Heroku` section.
 
@@ -277,13 +283,3 @@ export const GOOGLE_AUTH_LINK = "https://my-own-app.herokuapp.com/auth/google";
 ### MIT
 
 
-## Git & GitHub Notes (by Tayyiba-Kiran)
-
-- Git is a version control system that tracks code changes.
-- `git clone` copies the repo to your local system.
-- `git checkout -b branch-name` creates a new branch.
-- `git add .` stages the changes.
-- `git commit -m "message"` commits the changes.
-- `git push origin branch-name` pushes the branch to GitHub.
-- `.gitignore` contains files/folders to ignore in repo.
-- README describes the project, setup steps, and usage.

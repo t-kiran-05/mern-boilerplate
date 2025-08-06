@@ -1,10 +1,17 @@
+# Client and Server dependencies
 client/node_modules
 server/node_modules
 
+# Log files
 client/npm-debug.log*
 server/npm-debug.log*
+**/logs/
+**/*.log
 
+# Build outputs
 client/build
+server/build
+dist/
 
 # Ignore environment files but keep examples
 **/.env*
@@ -26,10 +33,20 @@ server/docker/mongo-data/*
 # Coverage reports
 coverage/
 
-# PM2 logs
-pids
+# PM2 logs and process IDs
+pids/
 *.pid
 *.seed
 
-# Docker override
+# Docker-related
 docker-compose.override.yml
+traefik/
+docker in progress/
+Dockerfile.backup
+**/.docker-temp
+
+# Optional: system-level junk or cache
+*.swp
+*.swo
+*.bak
+*.tmp
